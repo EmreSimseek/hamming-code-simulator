@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamming Error-Correcting Code Simülatörü</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-head">
+        <img src ="https://upload.wikimedia.org/wikipedia/tr/0/04/Bursa_Teknik_%C3%9Cniversitesi_Logosu.png" alt="Logo" class="logo">   
+        <div class="header-content">
+            <h1>Hamming Error-Correcting Code Simulator</h1>
+        </div>
+   
+    </header>
+   <div class="main-back">
+    <div class="container">
+        <h2><label for="bitSelect">Veri Ekleme</label></h2>
+        
+    <section class="config">
+        <label for="bitSelect">Veri bit uzunluğunu seçin:</label>
+        <select id="bitSelect" class="styled-select">
+            <option value="4">4 </option>
+            <option value="8">8 </option>
+            <option value="16">16 </option>
+        </select>
+    </section> 
+        <div class="input-section">
+           
+            <input type="text" id="input-data" placeholder="Veri girin...">
+            <button class="button" onclick="applyHamming()">Hamming Kodunu Uygula</button>
+        </div>
+        <div class="output-section">
+            <p><strong></strong> <span id="result"></span></p>
+            <p><strong>Hamming kodu:</strong> <span id="hamming-code"></span></p>
+            <p><strong>Gereken Check bit sayısı:</strong> <span id="check-bitnumber"></span></p>
+            <p><strong>Bellekte depolanan kod:</strong> <span id="memory-code"></span></p>
+           
+            
+        </div>
+
+    </div>
+    <div class="container2">
+        <h2>Bellekte Bulunan Veriler</h2>
+       
+    <div class="output-section2">
+        <button class="button" id="toggle-list" onclick=" updateMemoryList()">Verileri Göster/Gizle</button>
+     
+        <p><strong>Veri sayısı:</strong> <span id="item-count"></span></p>
+        <ul id="hamming-list" class="hidden"></ul>
+      
+    </div>
+   
+    </div>
+    
+        <div class="container3">
+        <h2>Yapay Hata Oluştur</h2>
+       
+    <div class="output-section1">
+        <input type="text" id="input-selected-data" placeholder="Veri numarasını girin">
+            <button class="button" onclick="returnSelectedData()">Veriyi seçin</button>
+            <p><strong>Seçilen Veri:</strong> <span id="selected-data"></span></p>
+        <p><strong>Değiştirmek istediğiniz index numarasını girin</strong></p>
+        <p><strong>Değer 0 ise 1 , 1 ise 0 olarak değişecektir  </strong></p>
+        <input type="text" id="selected-data-index" placeholder="index numarası">
+            <button id="apply"class="button" onclick=" applyError(); returnSelectedDataH();">İndex Gir</button>
+            <p><strong>Hatalı Veri:</strong> <span id="new-data"></span></p>
+            <p><strong>Blok Kod:</strong> <span id="h-code"></span></p>
+            <p><strong>Sendrom Kelimesi: </strong> <span id="sendrom-word"></span></p>
+           
+            <button id="apply" style="display: none;" onclick="applyError();">Bit Tablosunu Doldur</button>
+            <div id="bit-table-container" class="overflow-container" style="display: none;">
+                <table id="bit-table">
+                  <tr>
+                    <th>Bit Number</th>
+                  </tr>
+                </table>
+            </div>
+            
+           
+
+    </div>  
+   </div> 
+      
+    <script src="script.js"></script>
+</body>
+</html>
+
+

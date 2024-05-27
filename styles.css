@@ -1,0 +1,355 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+}
+
+.main-head {
+    background-color: #a8dadc; 
+    color: #fff; 
+    text-align: center; /* Metinleri ortalamak için */
+    padding: 20px 0; /* Üst ve alt boşluk ekleyin */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti ekleyin */
+    position: fixed; 
+    top: 0; 
+    width: 100%; /* Header'ı sayfanın genişliğine yayın */
+    z-index: 1000; 
+    transition: background-color 0.3s; 
+    display: flex; /* İçeriği yatay hizalamak için */
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.main-head h1 {
+    margin: 0; 
+    font-size: 32px; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Yumuşak bir gölge efekti ekleyin */
+    text-align: center;
+}
+
+.header-content {
+    flex-grow: 1; /* İçeriğin genişlemesini sağlayarak, başlık kısmının logosuz kısmı kaplamasını sağlayın */
+}
+
+.header-content h1 {
+    margin: 0; 
+    text-align: center; /* Metni ortala */
+}
+.logo {
+    margin-left: 30px; /* Logo ile metin arasına biraz boşluk bırakın */
+    width: 90px; 
+    height: auto; /* Orantılı olarak yüksekliği otomatik olarak ayarlayın */
+    background-color: #fff; /* Logo arka plan rengini beyaz yapın */
+    padding: 5px; /* Beyaz arka plan ile logo arasında biraz boşluk bırakın */
+    border-radius: 5px; /* Kenar yumuşatma */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti ekleyin */
+   
+}
+.main-back {
+    background-color: #2a9d8f; /* Arka plan rengi */
+    padding: 20px; /* İçeriğin kenar boşlukları */
+    width: 100%; /* Sayfanın tamamını kaplayacak genişlik */
+    min-height: 825px; /* Sayfanın tamamını kaplayacak minimum yükseklik (viewport yüksekliği) */
+    background-size: cover; /* Resmi sayfanın tamamını kaplayacak şekilde boyutlandır */
+}
+
+.container {
+    width: 400px;
+    min-height: 715px;
+    padding: 10px;
+    padding-top: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #457b9d;
+    transition: background-color 0.3s;
+    line-height: 3;
+    position: fixed;
+    top: 140px;
+    left:105px;
+}
+
+.container2{
+    width: 400px;
+    min-height: 715px;
+    padding: 10px;
+    padding-top: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #457b9d;
+    transition: background-color 0.3s;
+    line-height: 3;
+    position: fixed;
+    top: 140px;
+    left: 640px;
+    
+}
+.container3{
+    width: 400px;
+    min-height:715px;
+    padding: 10px;
+    padding-top: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #457b9d;
+    transition: background-color 0.3s;
+    line-height: 3;
+    position: fixed;
+    top: 140px;
+    left:1175px;
+    overflow-y: auto;
+}
+h1 {
+  
+    text-align: center;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Yumuşak bir gölge efekti ekleyin */
+}
+
+
+
+.hamming-button{
+    margin-top: 10px;
+}
+.input-section {
+    margin-bottom: 20px;
+}
+
+.input-section label {
+    font-weight: bold;
+}
+
+.input-section input {
+    width: 75%;
+    padding: 8px;
+    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+.input-section button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.input-section button:hover {
+    background-color: #45a049;
+}
+
+.output-section button {
+    margin-top: 10px;
+    
+}
+
+.output-section p {
+    margin-top: 10px;
+    width: 75%;
+}
+
+.output-section strong {
+    font-weight: bold;
+}
+.styled-select {
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="%231f78e9"&gt;&lt;path d="M2 6.5l10 11 10-11H2z"/&gt;&lt;/svg&gt;') no-repeat right center;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 30px 10px 10px; /* Right padding increased for the arrow icon */
+    cursor: pointer;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.styled-select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+.output-section p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.output-section strong {
+    font-weight: bold;
+}
+
+/* Arka plan rengini beyazdan başka bir renge değiştirin */
+
+
+/* Container'a fare ile gelindiğinde rengi değiştirin */
+.container:hover {
+    background-color: #e76f51;
+}
+.container2:hover {
+    background-color: #e76f51;
+} /*ffcccc*/
+.container3:hover {
+    background-color: #e76f51; 
+}
+
+/* Butona fare ile gelindiğinde rengi değiştirin */
+.input-section button:hover {
+    background-color: #e9c46a;
+}
+.output-section2 button:hover{
+    background-color: #e9c46a;
+}
+.output-section1 button:hover{
+    background-color: #e9c46a;
+}
+
+
+/* Seçim kutusunun arka plan rengini değiştirin */
+.styled-select {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s; /* Yumuşak geçiş efekti */
+}
+
+/* Seçim kutusuna fare ile gelindiğinde rengi değiştirin */
+.styled-select:hover {
+    background-color: #e6e6e6;
+}
+
+/* Butona fare ile gelindiğinde rengi değiştirin */
+.button:hover {
+    background-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Yumuşak gölge efekti */
+    transform: scale(1.05); /* Buton boyutunu büyütme */
+}
+
+
+
+.output-section2 button {
+    display: block; /* Butonu blok seviyesinde gösterir */
+    margin-bottom: 15px; /* Butonun altına boşluk ekler */
+    padding: 10px 20px; /* Buton içi boşluk */
+    font-size: 16px; /* Buton yazı boyutu */
+    cursor: pointer; /* Buton üzerine gelince imleci gösterir */
+}
+
+.output-section2 p {
+    margin: 10px 0;
+    white-space: normal; /* Metnin sarmalanmasını sağlar */
+    word-wrap: break-word; /* Uzun kelimeleri böler */
+    overflow-wrap: break-word; /* Uzun kelimeleri böler */
+}
+
+
+#toggle-list {
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#hamming-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px; /* Max height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc;
+    display: none; /* Hidden by default */
+}
+
+#hamming-list.hidden {
+    display: none;
+}
+
+#hamming-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#hamming-list li:hover {
+    background-color: #f0f0f0;
+}
+
+#hamming-list li.selected {
+    background-color: #1f65a7;
+}
+
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    text-align: center;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #4CAF50; /* Başlık sütunu için arka plan rengi */
+    color: white;
+    border: 1px solid black;
+  }
+
+  td {
+    border: 1px solid black;
+  }
+
+  /* Fare üzerine gelindiğinde */
+  tr:hover {
+    background-color: #ddd;
+  }
+  #bit-table-container {
+    overflow: auto;
+}
+#bit-table-container {
+    max-height: 150px; /* Maksimum yükseklik */
+    overflow-y: auto; /* Dikey kaydırma çubuğunu göster */
+}
+#bit-table {
+    font-size: 14px; /* Tablo yazı boyutu */
+    
+}
+
+#bit-table th,
+#bit-table td {
+    padding: 0px; /* Hücre içeriği arasındaki boşluk */
+}
+
+#bit-table-container {
+    max-height: 100px; /* Maksimum yükseklik */
+    overflow-y: auto; /* Dikey kaydırma çubuğunu göster */
+    
+}
+
+#bit-table-container table {
+    width: 100%; /* Tablo genişliğini %100 olarak ayarla */
+   
+    overflow-y: auto; /* Dikey kaydırma çubuğunu göster */
+    border-collapse: collapse; 
+    
+}
+
+#bit-table-container th,
+#bit-table-container td {
+    border: 1px solid #ebebeb; /* Hücre sınırlarını belirle */
+    padding: 3px; 
+    text-align: left; 
+}
